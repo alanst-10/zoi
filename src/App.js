@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import cassio from './components/images/cassio.jpg';
-import du from './components/images/du.png';
+import du from './components/images/du.jpg';
 import fabioSantos from './components/images/santos.jpg';
 import fagner from './components/images/fagner.jpg';
 import gil from './components/images/gil.jpg';
@@ -14,6 +14,7 @@ import joao from './components/images/joao.jpg';
 import maycon from './components/images/maycon.jpg';
 import rAugusto from './components/images/r8.jpg';
 import willian from './components/images/willian.jpg';
+import vitor from './components/images/vitor.jpg';
 
 const Container = styled.div`
   margin: 0;
@@ -23,7 +24,6 @@ const Container = styled.div`
   align-items: center;
   background-color: #D1D1D2;
   width: 100vw;
-  height: 100vh;
 `;
 
 const STLDBotao = styled.button`
@@ -35,6 +35,7 @@ const STLDBotao = styled.button`
   cursor: pointer;
   font-family: 'Macondo', cursive;
   font-size: 25px;
+  margin-bottom: 40px;
   &:hover {
     background-color: #800080
   }
@@ -67,7 +68,8 @@ function App() {
     {name: 'Maycon', position: 'meia central', pic: maycon},
     {name: 'Roger Guedes', position: 'atacante', pic: guedes},
     {name: 'Willian', position: 'atacante', pic: willian},
-    {name: 'Jô', position: 'centro-avante', pic: jo}
+    {name: 'Jô', position: 'centro-avante', pic: jo},
+    {name: 'Vitor Pereira', position: 'técnico', pic: vitor}
   ];
 
   const handleClick = () => {
@@ -80,26 +82,30 @@ function App() {
   }
 
   return (
-    <Container>
-      <Header />
-      <h2>Titulares do Corinthians:</h2>
-      <ol>
-        {corinthians.map((jogador, index) => {
-          return <li key={index}><strong>Nome:</strong> {jogador.name} - <strong>Posição:</strong> {jogador.position} <img width="150" height="100" src={jogador.pic} /></li>
-        })}
-      </ol>
+    <>
+      <Container>
+        <Header />
+        <h2>Titulares do Corinthians:</h2>
+        <div className='lista'>
+          <ul>
+            {corinthians.map((jogador, index) => {
+              return <li key={index}> <img width="300" height="150" src={jogador.pic} /> Nome: {jogador.name} <br /> Posição: {jogador.position}</li>
+            })}
+          </ul>
+        </div>
 
-      <hr/><br/><br/><br/>
-      <Content>
-        <STLDBotao onClick={handleClick}>{show ? 'Ocultar' : 'Leia uma verdade'}</STLDBotao>
+        <hr/><br/><br/><br/>
+        <Content>
+          <STLDBotao onClick={handleClick}>{show ? 'Ocultar' : 'Leia uma verdade'}</STLDBotao>
 
-        { show &&
-          <Verdade>O Palmeiras não tem mundial!!!</Verdade>
-        }
-        
-      </Content>
+          { show &&
+            <Verdade>O Palmeiras não tem mundial!!!</Verdade>
+          }
+          
+        </Content>
+      </Container>
       <Footer />
-    </Container>
+    </>
   );
 }
 

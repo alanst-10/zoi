@@ -3,7 +3,6 @@ import styled from 'styled-components';
 
 const Container = styled.header`
     width: 100vw;
-    height: 7vh;
     background-color: #EEE;
     display: flex;
     justify-content: space-between;
@@ -26,7 +25,7 @@ const Ul = styled.ul`
 `;
 
 const Li = styled.li`
-    margin-right: 40px;
+    padding-left: 40px;
     cursor: pointer;
     &:hover {
         color: #555
