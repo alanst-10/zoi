@@ -3,6 +3,17 @@ import { useState } from 'react';
 import styled from 'styled-components';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
+import cassio from './components/images/cassio.jpg';
+import du from './components/images/du.png';
+import fabioSantos from './components/images/santos.jpg';
+import fagner from './components/images/fagner.jpg';
+import gil from './components/images/gil.jpg';
+import guedes from './components/images/guedes.jpg';
+import jo from './components/images/jo.jpg';
+import joao from './components/images/joao.jpg';
+import maycon from './components/images/maycon.jpg';
+import rAugusto from './components/images/r8.jpg';
+import willian from './components/images/willian.jpg';
 
 const Container = styled.div`
   margin: 0;
@@ -46,22 +57,23 @@ function App() {
   const [ show, setShow ] = useState('false');
 
   let corinthians = [
-    {name: 'Cassio', position: 'goleiro', pic: './components/images/cassio.jpg'},
-    {name: 'Fagner', position: 'lateral direito', pic:'./components/images/fagner.jpg'},
-    {name: 'João Victor', position: 'zagueiro', pic:'./components/images/joao.jpg'},
-    {name: 'Gil', position: 'zagueiro', pic:'./components/images/gil.jpg'},
-    {name: 'Fabio Santos', position: 'lateral esquerdo', pic:'./components/images/f-santos.jpg'},
-    {name: 'Du Queiroz', position: 'volante', pic:'./components/images/du.png'},
-    {name: 'Renato Augusto', position: 'meia central', pic:'./components/images/r8.jpg'},
-    {name: 'Maycon', position: 'meia central', pic:'./components/images/maycon.jpg'},
-    {name: 'Roger Guedes', position: 'atacante', pic:'./components/images/guedes.jpg'},
-    {name: 'Willian', position: 'atacante', pic:'./components/images/willian.jpg'},
-    {name: 'Jô', position: 'centro-avante', pic:'./components/images/jo.jpg'}
+    {name: 'Cassio', position: 'goleiro', pic: cassio},
+    {name: 'Fagner', position: 'lateral direito', pic: fagner},
+    {name: 'João Victor', position: 'zagueiro', pic: joao},
+    {name: 'Gil', position: 'zagueiro', pic: gil},
+    {name: 'Fabio Santos', position: 'lateral esquerdo', pic: fabioSantos},
+    {name: 'Du Queiroz', position: 'volante', pic: du},
+    {name: 'Renato Augusto', position: 'meia central', pic: rAugusto},
+    {name: 'Maycon', position: 'meia central', pic: maycon},
+    {name: 'Roger Guedes', position: 'atacante', pic: guedes},
+    {name: 'Willian', position: 'atacante', pic: willian},
+    {name: 'Jô', position: 'centro-avante', pic: jo}
   ];
 
   const handleClick = () => {
     if (show) {
       setShow(false)
+
     } else {
       setShow(true)
     }
@@ -73,7 +85,7 @@ function App() {
       <h2>Titulares do Corinthians:</h2>
       <ol>
         {corinthians.map((jogador, index) => {
-          return <li key={index}><strong>Nome:</strong> {jogador.name} - <strong>Posição:</strong> {jogador.position} <img src={require(jogador.pic)} /></li>
+          return <li key={index}><strong>Nome:</strong> {jogador.name} - <strong>Posição:</strong> {jogador.position} <img width="150" height="100" src={jogador.pic} /></li>
         })}
       </ol>
 
