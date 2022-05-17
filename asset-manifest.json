@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/zoi/static/css/main.ba2d4591.css",
+    "main.js": "/zoi/static/js/main.ed520917.js",
+    "static/js/787.4912442d.chunk.js": "/zoi/static/js/787.4912442d.chunk.js",
+    "static/media/corinthians.png": "/zoi/static/media/corinthians.9d6db45a1dab6bc4ce7f.png",
+    "static/media/maycon.jpg": "/zoi/static/media/maycon.8ce9c04bca74d0b8867b.jpg",
+    "static/media/du.jpg": "/zoi/static/media/du.52e7c1aa5aa0315e2ebc.jpg",
+    "static/media/fagner.jpg": "/zoi/static/media/fagner.03c2b56f2f865547c8c0.jpg",
+    "static/media/gil.jpg": "/zoi/static/media/gil.558e21295be077c3cdce.jpg",
+    "static/media/vitor.jpg": "/zoi/static/media/vitor.d8dbe7729e6e3183e9f2.jpg",
+    "static/media/joao.jpg": "/zoi/static/media/joao.5e0a9be7f9f693e7d2e1.jpg",
+    "static/media/willian.jpg": "/zoi/static/media/willian.ad81f442e0fc8c87c928.jpg",
+    "static/media/guedes.jpg": "/zoi/static/media/guedes.ab3b1125e05efca43196.jpg",
+    "static/media/jo.jpg": "/zoi/static/media/jo.018bbf97113ede275db8.jpg",
+    "static/media/r8.jpg": "/zoi/static/media/r8.fc99a1db1bd6f2986ee7.jpg",
+    "static/media/cassio.jpg": "/zoi/static/media/cassio.2feee8222de68a531962.jpg",
+    "static/media/santos.jpg": "/zoi/static/media/santos.62a24f2ed71424609712.jpg",
+    "index.html": "/zoi/index.html",
+    "main.ba2d4591.css.map": "/zoi/static/css/main.ba2d4591.css.map",
+    "main.ed520917.js.map": "/zoi/static/js/main.ed520917.js.map",
+    "787.4912442d.chunk.js.map": "/zoi/static/js/787.4912442d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ba2d4591.css",
+    "static/js/main.ed520917.js"
+  ]
+}
