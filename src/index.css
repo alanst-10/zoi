@@ -12,23 +12,40 @@ code {
     monospace;
 }
 
-.lista ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.lista {
+  width: 90%;
+  margin: auto;
 }
 
-.lista ul img {
+.lista img {
+  width: 250px;
+  height: 125px;
   border-radius: 10px;
-  border: 5px solid black;
+  border: 5px solid black
 }
 
-.lista li {
-  margin-bottom: 30px;
+.list-card {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto auto;
+}
+
+.card {
+  width: 80%;
+  background-color: #EEE;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 300px;
+  margin: 30px;
+  padding: 15px;
+  border-radius: 10px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
   text-align: center;
 }
+.card:hover {
+  background-color: #111;
+  color: #EEE
+}
+

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const Rodape = styled.footer`
-    width: 100vw;
+    width: 100%;
     height: 4vh;
     background-color: #777;
     display: flex;
@@ -12,7 +12,7 @@ const Rodape = styled.footer`
 export const Footer = () => {
     return(
         <Rodape className="footer">
-            Desenvolvido por Alan's Developer
+            Desenvolvido por Alan de Santana Thimotheo
         </Rodape>
     );
 }

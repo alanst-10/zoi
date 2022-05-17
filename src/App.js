@@ -23,7 +23,7 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   background-color: #D1D1D2;
-  width: 100vw;
+  width: 100%;
 `;
 
 const STLDBotao = styled.button`
@@ -51,6 +51,7 @@ const Content = styled.div`
 const Verdade = styled.h1`
   font-family: 'Water Brush', cursive;
   font-size: 50px;
+  text-align: center
 `;
 
 function App() {
@@ -75,7 +76,6 @@ function App() {
   const handleClick = () => {
     if (show) {
       setShow(false)
-
     } else {
       setShow(true)
     }
@@ -85,13 +85,17 @@ function App() {
     <>
       <Container>
         <Header />
-        <h2>Titulares do Corinthians:</h2>
+        <h1>Titulares do Corinthians:</h1>
         <div className='lista'>
-          <ul>
+          <div className='list-card'>
             {corinthians.map((jogador, index) => {
-              return <li key={index}> <img width="300" height="150" src={jogador.pic} /> Nome: {jogador.name} <br /> Posição: {jogador.position}</li>
+              return (
+                <div className='card' key={index}>
+                  <img src={jogador.pic} /> <br/> Nome: {jogador.name} <br /> Posição: {jogador.position}
+                </div>
+              ) 
             })}
-          </ul>
+          </div>
         </div>
 
         <hr/><br/><br/><br/>

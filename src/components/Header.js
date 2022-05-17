@@ -2,7 +2,7 @@ import Corinthians from '../components/images/corinthians.png';
 import styled from 'styled-components';
 
 const Container = styled.header`
-    width: 100vw;
+    width: 100%;
     background-color: #EEE;
     display: flex;
     justify-content: space-between;
